@@ -26,7 +26,12 @@ public static class InputManager
 
         _GameControls.InGame.Shoot.performed += gio =>
         {
-            Debug.Log("shooting");
+            myPlayer.Shoot();
+        };
+
+        _GameControls.InGame.Look.performed += vini =>
+        {
+            myPlayer.SetLookRotation(vini.ReadValue<Vector2>());
         };
     }
 
