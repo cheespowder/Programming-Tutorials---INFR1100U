@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     //shooting
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private float projectileForce;
+
+   
     
     private Vector2 currentAngle;
 

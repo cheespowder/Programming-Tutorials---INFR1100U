@@ -47,9 +47,6 @@ public static class InputManager
         _GameControls.UI.Enable();
         _GameControls.InGame.Disable();
     }
-
-
-
-
+    
 
 }
