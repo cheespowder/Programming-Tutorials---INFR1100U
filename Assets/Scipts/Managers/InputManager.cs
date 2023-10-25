@@ -33,6 +33,8 @@ public static class InputManager
         {
             myPlayer.SetLookRotation(vini.ReadValue<Vector2>());
         };
+
+        
     }
 
 

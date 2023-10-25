@@ -27,8 +27,9 @@ public class Player : MonoBehaviour
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private float projectileForce;
 
+    public int currentClip, maxClipSize, currentAmmo, maxAmmoSize;
+
    
-    
     private Vector2 currentAngle;
 
     private Rigidbody rb;
@@ -73,14 +74,20 @@ public class Player : MonoBehaviour
    }
 
    public void Shoot()
+   
+        
    {
       Rigidbody currentProjectile = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
       
       currentProjectile.AddForce(followTarget.forward * projectileForce, ForceMode.Impulse);
       
       Destroy(currentProjectile.gameObject, 4);
+
+     
+      
    }
 
+ 
    public void SetLookRotation(Vector2 readValue)
    {
        currentAngle.x += readValue.x * Time.deltaTime * mouseSensX;
