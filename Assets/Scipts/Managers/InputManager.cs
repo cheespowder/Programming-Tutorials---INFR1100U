@@ -21,7 +21,7 @@ public static class InputManager
 
         _GameControls.InGame.Jump.performed += jobe =>
         {
-           Debug.Log("Is this working");
+           myPlayer.Jump();
         };
 
         _GameControls.InGame.Shoot.performed += gio =>
