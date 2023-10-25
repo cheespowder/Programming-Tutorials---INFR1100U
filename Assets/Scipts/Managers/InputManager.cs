@@ -17,6 +17,17 @@ public static class InputManager
         {
             myPlayer.SetMovementDirection(jude.ReadValue<Vector3>());
         };
+
+
+        _GameControls.InGame.Jump.performed += jobe =>
+        {
+           Debug.Log("Is this working");
+        };
+
+        _GameControls.InGame.Shoot.performed += gio =>
+        {
+            Debug.Log("shooting");
+        };
     }
 
 
